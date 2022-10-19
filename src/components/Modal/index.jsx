@@ -8,7 +8,7 @@ import {
   ModalButtonSecondary
 } from './styles'
 
-const Modal = ({removeProduct, setProductToRemove, ActionModalButtons}) => {
+const Modal = ({removeProduct, setProductToRemove}) => {
   return (
     <ModalBackground>
       <MainModal>
