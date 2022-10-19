@@ -88,7 +88,6 @@ const ResumeCart = ({ selectedProducts, setSelectedProducts }) => {
         {     
           selectedProducts.length > 0 ?
             selectedProducts.map((product, id) => 
-              <div>
                 <RowProductsCart key={product.id}>
                   <ImageProductCart src={product.image} alt="altImage" />
                     <div>
@@ -105,7 +104,6 @@ const ResumeCart = ({ selectedProducts, setSelectedProducts }) => {
                       <ButtonDelete onClick={() => setProductToRemove(product)}>Delete</ButtonDelete>
                     </CartPricesSection>
                 </RowProductsCart>
-              </div>
             ): 
             <ContainerEmptyCart>
               <ImgEmptyCart />
